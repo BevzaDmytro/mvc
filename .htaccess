@@ -1,0 +1,10 @@
+AddDefaultCharset utf-8
+
+RewriteEngine on
+
+RewriteBase /mvc/
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.*)$ my.php/$1
